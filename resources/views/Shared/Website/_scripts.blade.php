@@ -13,3 +13,4 @@
 <script src="{{url("Website/assets")}}/js/parallax.min.js"></script>
 <script src="{{url("Website/assets")}}/js/mail-script.js"></script>
 <script src="{{url("Website/assets")}}/js/main.js"></script>
+<script src="Home/home.js"></script>

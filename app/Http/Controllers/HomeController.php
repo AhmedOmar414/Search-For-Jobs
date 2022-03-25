@@ -21,8 +21,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+
+    //
+    public function Return_Complete_Register()
     {
-        return view('home');
+        if (auth()->user()->is_employer == 0){
+            return Redirect('Employee/CompleteRegister/career');
+        }else{
+            return "you are employer";
+        }
     }
 }

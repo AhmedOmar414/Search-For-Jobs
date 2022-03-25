@@ -60,6 +60,9 @@
             </div>
         </div>
     </nav>
+<div class="container">
+    @yield('content')
+</div>
 </body>
 
 </html>

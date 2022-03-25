@@ -1,5 +1,110 @@
-
+.complete{
+    margin-left: 420px;
+}
 .p{
     font-size:18px;
     font-weight:500;
+}
+.circlee{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+}
+#page{
+    background-color: rgba(245, 245, 245, 0.58);
+}
+.custom{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-css{
+    width: 40%;
+    background-color:white;
+    border-color: rgb(226, 223, 223);
+    box-shadow: 5px 5px 7px rgb(236, 234, 234);
+}
+.inner{
+    padding: 35px 0 20px 30px;
+}
+.step{
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*career level radio button*/
+.wrapper{
+    display: inline-flex;
+    background: #fff;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+.wrapper .option{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+.wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: rgb(26, 85, 241);
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+input[type="radio"]{
+    display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3{
+    border-color: rgb(26, 85, 241);
+    background: rgb(26, 85, 241);
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot,
+#option-3:checked:checked ~ .option-3 .dot{
+    background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before,
+#option-3:checked:checked ~ .option-3 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span,
+#option-3:checked:checked ~ .option-3 span{
+    color: #fff;
 }

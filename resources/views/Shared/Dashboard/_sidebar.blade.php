@@ -18,11 +18,27 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white " href="./pages/tables.html">
+                <a class="nav-link text-white " href="#">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">table_view</i>
+                        <i class="fas fa-users"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="#">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Categories</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="#">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Jobs</span>
                 </a>
             </li>
         </ul>
